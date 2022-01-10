@@ -17,6 +17,7 @@
     "react-scripts": "4.0.3",
     "react-youtube": "^7.13.1",
     "redux": "^4.1.1",
+    "typewriter-effect": "^2.18.2",
     "web-vitals": "^1.1.2"
   },
   "scripts": {

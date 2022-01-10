@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./Loginscreen.css";
 import SignupScreen from './SignupScreen';
+import  Typewriter  from 'typewriter-effect';
 
 function LoginScreen() {
 
@@ -12,7 +13,7 @@ function LoginScreen() {
            <img  className="loginScreen_logo" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" 
             alt=""/>
            <button onClick={()=> setSignIn(true)}
-           className="loginScreen_button">Sign In Vmro</button>
+           className="loginScreen_button">Sign In</button>
             
             <div className="loginScreen_gradient"/>
             </div> 
@@ -21,9 +22,29 @@ function LoginScreen() {
                <SignupScreen/>
            ) : (
             <>
-              <h1>Unlimited films, TV programmes and more.</h1>
-            <h2>Watch anywhere. Cancel at any time.</h2>
-            <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+            <h1 className="typediv">
+               <Typewriter
+                    onInit={(typewriter)=> {
+
+                    typewriter
+                    
+                    .typeString("Unlimited films, TV programmes and more.")
+                        
+                    .pauseFor(1000)
+                    .deleteAll()
+                    .typeString("Watch anywhere. Cancel at any time.")
+                    .pauseFor(1000)
+                    .deleteAll()
+                    .typeString("Ready to watch? ") //Enter your email to create or restart your membership.
+                    .pauseFor(1000)
+                    .deleteAll()
+                    .typeString("Enter your email to create or restart your membership.")
+                    .start();
+                    }}
+                
+               />
+            </h1>
+           
 
             <div className="loginScreen_input">
                 <form>

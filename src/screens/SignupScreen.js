@@ -36,13 +36,13 @@ const signIn = (e) => {
     return (
         <div className="signupScreen">
         <form>
-            <h1>Sign In kro bey Pehle</h1>
+            <h1>Sign In</h1>
             <input ref={emailRef} placeholder="Email" type="email" />
             <input ref ={passwordRef} placeholder="Password" type="password" />
             <button type="submit" onClick={signIn}>Sign In</button>
 
             <h4>
-            <span className="signupScreen_gray">New to Netflix? </span>
+            <span className="signupScreen_gray">New here? </span>
             <span className="signupScreen_link" onClick={register}>Sign Up now.</span>
             </h4>
         </form>

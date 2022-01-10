@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import "./Nav.css";
 
+
 function Nav() {
 const[show,handleShow]= useState(false);
 const history = useHistory()
@@ -27,8 +28,8 @@ return() => {
             <img
             onClick={() => history.push("/")}
                 className="nav_logo"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1920px-Netflix_2015_logo.svg.png"
-                alt="Netflix Logo"
+                src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png"
+                alt="logo"
             />
             <img 
             onClick={() => history.push("/profile")}
